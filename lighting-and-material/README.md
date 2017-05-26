@@ -1,4 +1,4 @@
-LightingAndMaterial.cpp
+LightingAndMaterial.cpp - produces an output displaying a sphere whose lighting and surface material can be customized using a provided menu (accessed by a right-click).
 
 - Routines:
 	- initialize() - called from main routine; sets background colour, enables depth testing
