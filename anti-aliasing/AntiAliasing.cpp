@@ -86,18 +86,18 @@ void reshape(int w, int h) {
 
 // Main program
 void main(int argc, char **argv) {
-		glutInit(&argc, argv); // GLUT initialization
-		glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH); // sets two buffers, RGB colour mode, depth buffer operations
-		glutInitWindowSize(500, 500); // sets window size
-		glutInitWindowPosition(100, 100); // sets window position
+	glutInit(&argc, argv); // GLUT initialization
+	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH); // sets two buffers, RGB colour mode, depth buffer operations
+	glutInitWindowSize(500, 500); // sets window size
+	glutInitWindowPosition(100, 100); // sets window position
 
-		int windowHandle = glutCreateWindow("Anti-Aliasing"); // creates window with specified title
-		glutSetWindow(windowHandle); // sets window to that previously created
+	int windowHandle = glutCreateWindow("Anti-Aliasing"); // creates window with specified title
+	glutSetWindow(windowHandle); // sets window to that previously created
 
-		glutDisplayFunc(display); // sets routine to display picture in window
-		glutReshapeFunc(reshape); // sets routine to handle change in display-window dimensions
+	glutDisplayFunc(display); // sets routine to display picture in window
+	glutReshapeFunc(reshape); // sets routine to handle change in display-window dimensions
 
-		initialize(); // calls initialize routine
+	initialize(); // calls initialize routine
 	
 	glutMainLoop(); // displays initial graphics and puts program in infinite loop
 }// main(int argc, char **argv)
