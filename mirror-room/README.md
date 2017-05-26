@@ -1,5 +1,7 @@
 MirrorRoom.cpp - produces an output that contains a mirror room with  multi-colored cube in the middle, including all reflection and shadows.
 
+*May be slow to load graphics*
+
 - Routines:
 	- initialize() - called from main routine; sets the background colour and the limits of
 				   both the floor and the wall - necessary for inclusion testing.
